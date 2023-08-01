@@ -1,0 +1,22 @@
+<p [style.font-size]="fontSize">{{ fruit }}</p>
+<input type="text" [value]="fullName">
+<button class="btn btn-success" (click)="testClick()">Test</button>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let fruit of fruits">
+      <td>
+        {{ fruit.name }}
+      </td>
+      <td>
+        {{ fruit.quantity }}
+      </td>
+    </tr>
+  </tbody>
+</table>
